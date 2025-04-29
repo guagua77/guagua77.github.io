@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha256-dABdfBfUoC8vJUBOwGVdm8L9qlMWaHTIfXt+7GnZCIo=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"guagua77.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.23.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"show_result":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="tips： 突出基础: 扎实的计算机科学基础（数据结构、算法、操作系统、网络）是根本。 结合项目: 将上述知识点与你做过的项目经验结合起来谈，说明你在实际中是如何考虑和解决这些问题的。即使不是支付项目，也可以将在高并发、高可用、数据一致性方面的经验迁移过来。 强调思考过程: 不仅要说出用了什么技术，更要说明 为什么 用这个技术，以及考虑了哪些 权衡 (Trade-offs)。 展现对质量的关注:">
+<meta property="og:type" content="article">
+<meta property="og:title" content="面经1">
+<meta property="og:url" content="https://guagua77.github.io/2025/04/20/prepare%20for%20interview/index.html">
+<meta property="og:site_name" content="Guagua&#39;s blog">
+<meta property="og:description" content="tips： 突出基础: 扎实的计算机科学基础（数据结构、算法、操作系统、网络）是根本。 结合项目: 将上述知识点与你做过的项目经验结合起来谈，说明你在实际中是如何考虑和解决这些问题的。即使不是支付项目，也可以将在高并发、高可用、数据一致性方面的经验迁移过来。 强调思考过程: 不仅要说出用了什么技术，更要说明 为什么 用这个技术，以及考虑了哪些 权衡 (Trade-offs)。 展现对质量的关注:">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-04-20T06:10:33.000Z">
+<meta property="article:modified_time" content="2025-04-29T06:03:56.813Z">
+<meta property="article:author" content="Guagua">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://guagua77.github.io/2025/04/20/prepare%20for%20interview/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://guagua77.github.io/2025/04/20/prepare%20for%20interview/","path":"2025/04/20/prepare for interview/","title":"面经1"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>面经1 | Guagua's blog</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Guagua's blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">我的个人博客</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-play"><a href="/html/snake.html" rel="section"><i class="fa fa-gamepad fa-fw"></i>play</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#tips%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">tips：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BA%BF%E7%A8%8B%E6%B1%A0"><span class="nav-number"></span> <span class="nav-text">线程池</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E7%BA%BF%E7%A8%8B%E6%B1%A0"><span class="nav-number"></span> <span class="nav-text">1. 为什么需要线程池</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E6%A0%B8%E5%BF%83%E5%8E%9F%E7%90%86"><span class="nav-number"></span> <span class="nav-text">2. 线程池的核心原理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%B8%E5%BF%83%E5%8F%82%E6%95%B0"><span class="nav-number">1.</span> <span class="nav-text">核心参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E4%B8%8E%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="nav-number"></span> <span class="nav-text">最佳实践与注意事项</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E9%81%BF%E5%85%8D%E4%BD%BF%E7%94%A8-Executors-%E5%88%9B%E5%BB%BA%E7%BA%BF%E7%A8%8B%E6%B1%A0"><span class="nav-number">1.</span> <span class="nav-text">1. 避免使用 Executors 创建线程池</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E4%BD%BF%E7%94%A8%E6%9C%89%E7%95%8C%E9%98%9F%E5%88%97"><span class="nav-number">2.</span> <span class="nav-text">2. 使用有界队列</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86"><span class="nav-number">3.</span> <span class="nav-text">3. 异常处理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java-8-%E4%BB%A5%E5%90%8E%E7%9A%84%E5%A2%9E%E5%BC%BA"><span class="nav-number"></span> <span class="nav-text">Java 8 以后的增强</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%92%E6%96%A5%E9%94%81"><span class="nav-number"></span> <span class="nav-text">互斥锁</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8E%9F%E5%AD%90%E6%8C%87%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">原子指令</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E6%97%8B%E9%94%81-Spinlock"><span class="nav-number"></span> <span class="nav-text">自旋锁(Spinlock)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E4%BA%92%E6%96%A5%E9%94%81%E5%AE%9E%E7%8E%B0"><span class="nav-number"></span> <span class="nav-text">4. 编程语言中的互斥锁实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-Java%E4%B8%AD%E7%9A%84%E4%BA%92%E6%96%A5%E9%94%81"><span class="nav-number">1.</span> <span class="nav-text">4.1 Java中的互斥锁</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%92%E6%96%A5%E9%94%81%E5%AE%9E%E7%8E%B0%E7%9A%84%E5%85%B3%E9%94%AE%E7%89%B9%E6%80%A7"><span class="nav-number"></span> <span class="nav-text">互斥锁实现的关键特性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-%E5%8F%AF%E9%87%8D%E5%85%A5%E6%80%A7-Reentrant"><span class="nav-number">1.</span> <span class="nav-text">5.1 可重入性(Reentrant)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2-%E5%85%AC%E5%B9%B3%E6%80%A7-Fairness"><span class="nav-number">2.</span> <span class="nav-text">5.2 公平性(Fairness)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-3-%E6%AD%BB%E9%94%81%E9%A2%84%E9%98%B2"><span class="nav-number">3.</span> <span class="nav-text">5.3 死锁预防</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number"></span> <span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%AB%98%E5%B9%B6%E5%8F%91%E9%AB%98%E5%8F%AF%E7%94%A8"><span class="nav-number"></span> <span class="nav-text">高并发高可用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%AF%B9%E6%AF%94"><span class="nav-number"></span> <span class="nav-text">解决方案对比</span></a></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Guagua</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://guagua77.github.io/2025/04/20/prepare%20for%20interview/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Guagua">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Guagua's blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="面经1 | Guagua's blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          面经1
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2025-04-20 14:10:33" itemprop="dateCreated datePublished" datetime="2025-04-20T14:10:33+08:00">2025-04-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-04-29 14:03:56" itemprop="dateModified" datetime="2025-04-29T14:03:56+08:00">2025-04-29</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h3 id="tips："><a href="#tips：" class="headerlink" title="tips："></a>tips：</h3><ol>
+<li><strong>突出基础:</strong> 扎实的计算机科学基础（数据结构、算法、操作系统、网络）是根本。</li>
+<li><strong>结合项目:</strong> 将上述知识点与你做过的项目经验结合起来谈，说明你在实际中是如何考虑和解决这些问题的。即使不是支付项目，也可以将在高并发、高可用、数据一致性方面的经验迁移过来。</li>
+<li><strong>强调思考过程:</strong> 不仅要说出用了什么技术，更要说明 <em>为什么</em> 用这个技术，以及考虑了哪些 <em>权衡 (Trade-offs)</em>。</li>
+<li><strong>展现对质量的关注:</strong> 强调你对代码质量、测试、系统稳定性和安全性的重视。</li>
+<li><strong>准备提问:</strong> 准备一些有深度的问题问面试官，比如他们目前支付系统面临的最大挑战、技术选型、团队文化等。</li>
+</ol>
+<h1 id="线程池"><a href="#线程池" class="headerlink" title="线程池"></a>线程池</h1><h2 id="1-为什么需要线程池"><a href="#1-为什么需要线程池" class="headerlink" title="1. 为什么需要线程池"></a>1. 为什么需要线程池</h2><p>在介绍线程池之前，我们先理解为什么需要线程池：</p>
+<ul>
+<li><strong>降低资源消耗</strong>：通过重用已存在的线程，减少线程创建和销毁的开销</li>
+<li><strong>提高响应速度</strong>：任务到达时，可以不必等待线程创建就能立即执行</li>
+<li><strong>提高线程的可管理性</strong>：线程是稀缺资源，使用线程池可以统一管理，调度，监控</li>
+</ul>
+<h2 id="2-线程池的核心原理"><a href="#2-线程池的核心原理" class="headerlink" title="2. 线程池的核心原理"></a>2. 线程池的核心原理</h2><p>Java 中的线程池主要由 <code>ThreadPoolExecutor</code> 类实现，其核心工作原理如下：</p>
+<ol>
+<li><strong>线程池管理</strong>：线程池维护着一定数量的线程，并且这些线程的生命周期由线程池控制</li>
+<li><strong>任务队列</strong>：当所有线程都在忙碌时，新提交的任务会被放入队列中等待执行</li>
+<li><strong>任务执行</strong>：线程池中的线程会不断从任务队列中取出任务并执行</li>
+</ol>
+<h3 id="核心参数"><a href="#核心参数" class="headerlink" title="核心参数"></a>核心参数</h3><p><code>ThreadPoolExecutor</code> 的构造函数接受以下几个重要参数：</p>
+<ul>
+<li><strong>corePoolSize</strong>：线程池中保持的核心线程数，即使线程空闲也不会被销毁（除非设置 allowCoreThreadTimeOut）</li>
+<li><strong>maximumPoolSize</strong>：线程池允许创建的最大线程数</li>
+<li><strong>keepAliveTime</strong>：超出核心线程数的空闲线程，在空闲时间超过这个值后会被回收</li>
+<li><strong>workQueue</strong>：存放待执行任务的队列</li>
+<li><strong>threadFactory</strong>：创建新线程的工厂</li>
+<li><strong>handler</strong>：当线程池和队列都满了，无法接受新任务时的处理策略</li>
+</ul>
+<p>使用默认拒绝策略，IO密集型任务线程池为核心线程数的三倍。</p>
+<h2 id="最佳实践与注意事项"><a href="#最佳实践与注意事项" class="headerlink" title="最佳实践与注意事项"></a>最佳实践与注意事项</h2><h3 id="1-避免使用-Executors-创建线程池"><a href="#1-避免使用-Executors-创建线程池" class="headerlink" title="1. 避免使用 Executors 创建线程池"></a>1. 避免使用 Executors 创建线程池</h3><p>推荐直接使用 <code>ThreadPoolExecutor</code> 构造方法创建线程池，明确指定各个参数。</p>
+<h3 id="2-使用有界队列"><a href="#2-使用有界队列" class="headerlink" title="2. 使用有界队列"></a>2. 使用有界队列</h3><p>尽量使用有界队列，如 <code>ArrayBlockingQueue</code>，避免队列无限增长导致 OOM。</p>
+<h3 id="3-异常处理"><a href="#3-异常处理" class="headerlink" title="3. 异常处理"></a>3. 异常处理</h3><p>线程池中的任务抛出未捕获的异常不会导致线程池停止，但会导致线程退出并可能创建新线程。建议在任务内部进行异常捕获和处理.</p>
+<h2 id="Java-8-以后的增强"><a href="#Java-8-以后的增强" class="headerlink" title="Java 8 以后的增强"></a>Java 8 以后的增强</h2><p>Java 8 引入了 <code>CompletableFuture</code>，提供了更强大的异步编程模型，它底层默认使用 <code>ForkJoinPool</code>。</p>
+<h1 id="互斥锁"><a href="#互斥锁" class="headerlink" title="互斥锁"></a>互斥锁</h1><h3 id="原子指令"><a href="#原子指令" class="headerlink" title="原子指令"></a>原子指令</h3><h2 id="自旋锁-Spinlock"><a href="#自旋锁-Spinlock" class="headerlink" title="自旋锁(Spinlock)"></a>自旋锁(Spinlock)</h2><h2 id="4-编程语言中的互斥锁实现"><a href="#4-编程语言中的互斥锁实现" class="headerlink" title="4. 编程语言中的互斥锁实现"></a>4. 编程语言中的互斥锁实现</h2><h3 id="4-1-Java中的互斥锁"><a href="#4-1-Java中的互斥锁" class="headerlink" title="4.1 Java中的互斥锁"></a>4.1 Java中的互斥锁</h3><p>Java的synchronized关键字实现：</p>
+<ul>
+<li>基于对象的监视器锁(Monitor)</li>
+<li>结合了偏向锁、轻量级锁和重量级锁的多级实现</li>
+</ul>
+<p>JVM中的锁升级过程：</p>
+<ol>
+<li><p><strong>偏向锁</strong>：无竞争情况下，标记锁对象为第一个获取线程所拥有</p>
+</li>
+<li><p><strong>轻量级锁</strong>：有竞争但不激烈时，使用CAS操作在用户空间自旋</p>
+</li>
+<li><p><strong>重量级锁</strong>：竞争激烈时，使用操作系统提供的互斥量，让线程休眠等待</p>
+</li>
+<li><h2 id="互斥锁实现的关键特性"><a href="#互斥锁实现的关键特性" class="headerlink" title="互斥锁实现的关键特性"></a>互斥锁实现的关键特性</h2><h3 id="5-1-可重入性-Reentrant"><a href="#5-1-可重入性-Reentrant" class="headerlink" title="5.1 可重入性(Reentrant)"></a>5.1 可重入性(Reentrant)</h3><ul>
+<li>允许同一线程多次获取同一锁</li>
+<li>通过记录锁持有者和加锁计数实现</li>
+</ul>
+<h3 id="5-2-公平性-Fairness"><a href="#5-2-公平性-Fairness" class="headerlink" title="5.2 公平性(Fairness)"></a>5.2 公平性(Fairness)</h3><ul>
+<li>公平锁：按照请求顺序分配锁，防止饥饿</li>
+<li>非公平锁：允许新来的线程”插队”获取锁，提高吞吐量</li>
+</ul>
+<h3 id="5-3-死锁预防"><a href="#5-3-死锁预防" class="headerlink" title="5.3 死锁预防"></a>5.3 死锁预防</h3><ul>
+<li>超时机制：允许在指定时间内未获取到锁时返回</li>
+<li>锁排序：保证多个锁按照相同的顺序获取</li>
+<li>锁层级：为锁分配层级，只允许按照层级顺序获取</li>
+</ul>
+</li>
+</ol>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>互斥锁的实现涉及多个层次：</p>
+<ol>
+<li>硬件层：原子指令提供基础保障</li>
+<li>操作系统层：结合自旋和线程调度实现高效互斥</li>
+<li>语言层：在操作系统基础上提供更易用的抽象</li>
+</ol>
+<p>互斥锁的设计需要平衡多个因素：</p>
+<ul>
+<li>性能（锁的获取和释放速度）</li>
+<li>公平性（防止线程饥饿）</li>
+<li>资源使用（CPU时间、内存占用）</li>
+<li>复杂性（实现难度和使用便捷性）</li>
+</ul>
+<p>现代互斥锁通常采用多级实现策略，根据竞争情况动态调整，以在不同场景下获得最优性能。</p>
+<p>锁不可重入会因自指导致死锁</p>
+<h1 id="高并发高可用"><a href="#高并发高可用" class="headerlink" title="高并发高可用"></a>高并发高可用</h1><h2 id="解决方案对比"><a href="#解决方案对比" class="headerlink" title="解决方案对比"></a>解决方案对比</h2><table>
+<thead>
+<tr>
+<th>方面</th>
+<th>高并发解决方案</th>
+<th>高可用解决方案</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>架构层面</td>
+<td>微服务拆分、无状态设计</td>
+<td>服务冗余、故障隔离</td>
+</tr>
+<tr>
+<td>计算资源</td>
+<td>集群扩展、弹性伸缩</td>
+<td>主备架构、自动故障转移</td>
+</tr>
+<tr>
+<td>数据层</td>
+<td>分库分表、缓存加速</td>
+<td>数据多副本、备份恢复</td>
+</tr>
+<tr>
+<td>网络层</td>
+<td>负载均衡、流量分发</td>
+<td>多链路保障、故障重路由</td>
+</tr>
+<tr>
+<td>应用层</td>
+<td>代码优化、异步调用</td>
+<td>优雅降级、限流熔断</td>
+</tr>
+</tbody></table>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2025/04/02/hello-world/" rel="prev" title="Hello World test">
+                  <i class="fa fa-angle-left"></i> Hello World test
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2025/04/21/txttool/" rel="next" title="文本去换行">
+                  文本去换行 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Guagua</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>
